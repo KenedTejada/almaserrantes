@@ -1,12 +1,9 @@
 <?php
+
+include ("connection.php");
 session_start();
-include_once('connection.php');
 
-// if(isset($_SESSION['name']) && isset($_SESSION['username'] )){
 
-// }
-$_SESSION['email'];
-$_SESSION['email'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -67,13 +64,13 @@ $_SESSION['email'];
  
 
 
-
+                
+         
 <div class="container">
-<h3>Welcome,  <span><?=$_SESSION['email'];?></span></h3>
-<p>Your Email id is : <h6><?=$_SESSION['email'];?></h6></p>
+<h3>Welcome,  <span><?=$_SESSION['username'];?></span></h3>
+<p>Your Email id is : <h6><?=$_SESSION['username'];?></h6></p>
 <a href="index.php" class="btn">LOGOUT</a>
 </div>
-
 
 
 

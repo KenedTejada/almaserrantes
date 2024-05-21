@@ -1,3 +1,20 @@
+
+<?php
+session_start();
+if(empty($_SESSION["email"])){
+header("location: login.php");
+
+}
+
+include_once('connection.php');
+
+// if(isset($_SESSION['name']) && isset($_SESSION['username'] )){
+
+// }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +60,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
          <img src="assets/img/fotos/Logo.jpg" alt=""> 
       <!--  <i class="bi bi-camera"></i>-->
@@ -73,15 +90,32 @@
           </li>
           <li><a href="services.html">Servicios</a></li>
           <li><a href="contact.html">Contacto</a></li>
-          <li><a href="login.php">Login</a></li>
+          <li><a href="login.php">Iniciar Sesión</a></li>
         </ul>
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
+      
+<a href="#" class="nav-link text-white">
+<span style="display: inline-block; vertical-align: middle; margin-bottom: 5px;">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>
+
+</span>
+<!--<i class="large material-icons">account_circle</i>-->
+<!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg> -->
+<span><?=$_SESSION['email'];?></span>
+<i class="bi  ">
+
+</a>
+
+
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="salirsesion.php" class="linkedin">Salir</i></i></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -90,6 +124,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+
   <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
     <div class="container">
       <div class="row justify-content-center">
@@ -262,6 +297,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
@@ -284,6 +320,8 @@
   </div>
 
   <!-- Vendor JS Files -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

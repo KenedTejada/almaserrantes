@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error: Usuario no encontrado</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     
+    }
+    .error-container {
+      text-align: center;
+     
+    }
+    
+
+
+body {
+  font-family: var(--font-default);
+  color: white; /* Texto blanco */
+
+  background-color: #000;
+}
+
+
+ /* Estilos para alinear verticalmente el ícono y el texto dentro del botón */
+ .btn-content {
+      display: flex;
+      align-items: center;
+    }
+    /* Estilos para el ícono */
+    .material-icons {
+      margin-right: 5px; /* Espacio entre el ícono y el texto */
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="error-container">
+      <h1 >Error: Usuario no encontrado</h1>
+      <p>Lo sentimos, el usuario que buscas no ha sido encontrado.</p>
+     <img src="usuario no encontrado.png" alt="">
+    
+    
+
+    
+    </div>
+   
+    <button class="btn btn-light mt-3" onclick="goBack()">
+        <span class="btn-content"> <!-- Contenedor para alinear verticalmente el ícono y el texto -->
+          <i class="large material-icons">arrow_back</i> <!-- Ícono -->
+          Volver <!-- Texto -->
+        </span>
+      </button>
+
+
+   <br>
+
+   <br>
+   <br>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+
+
+
+</body>
+</html>
+
+ <!--
+  Sizes:
+  tiny: 1rem
+  small: 2rem
+  medium: 4rem
+  large: 6rem
+  -->
+  
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Materialize CSS -->
+   
+    
+
+

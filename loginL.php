@@ -22,6 +22,7 @@
 <?php
 session_start();
 
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -45,12 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($pass, $row["password"])) {
             $_SESSION["user_id"] = $row["id"];
             $_SESSION["email"] = $email;
-            header("Location: welcome.php");
+           
+            header("Location: index.php");
         } else {
             echo "Contraseña incorrecta.";
         }
     } else {
-        echo "Usuario no encontrado.";
+        header("Location: loco.html");
     }
 }
 

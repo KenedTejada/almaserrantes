@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
 
+
+
+
 <head>
   <title>Login</title>
   <!-- Required meta tags -->
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/fotos/icono.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -29,16 +32,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet">
 </head>
 
 
 <style>
-body {
-  font-family: var(--font-default);
-  color: white; /* Texto blanco */
 
-  background-color: #000;
+  .form-container {
+      margin: 20px; /* Ajusta el margen alrededor de los campos de entrada */
 }
 </style>
 
@@ -55,60 +56,42 @@ body {
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>PhotoFolio</h1>
+        <img src="assets/img/fotos/icono.png" alt=""> 
+        <h1>Almas Errantes</h1>
       </a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Nature</a></li>
-              <li><a href="gallery.html">People</a></li>
-              <li><a href="gallery.html">Architecture</a></li>
-              <li><a href="gallery.html">Animals</a></li>
-              <li><a href="gallery.html">Sports</a></li>
-              <li><a href="gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+
 
     </div>
   </header><!-- End Header -->
   <section class="vh-100">
+    
+  <div class="card-body p-md-2">
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6">
           <img src="complete.jpg" class="img-fluid" alt="Phone image" height="300px" width="600px">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+
+<!-- el borde tarjetica inicio seccion -->
+
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="border-radius: 25px;">
+
+
+
           <form action="loginL.php" method="post">
+
+          <div class="form-container">
             <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-3">Iniciar Sesión </p>
             <!-- Email input -->
+            <div class=" col-xl-12 ">
+
             <div class="form-outline mb-4">
               <label class="form-label" for="form1Example13"> <i class="bi bi-person-circle"></i> Username</label>
               <input type="email" id="form1Example13" class="form-control form-control-lg py-3" name="email" autocomplete="off" placeholder="enter your e-mail" style="border-radius:25px ;" />
@@ -134,6 +117,10 @@ body {
         </div>
       </div>
     </div>
+</div>
+</div>
+</div>
+</div>
   </section>
 
 
